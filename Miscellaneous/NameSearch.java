@@ -10,7 +10,7 @@ harry
 Full name of the celebraty is:
 harry potter
  */
-import java.io.*;
+
 import java.util.Scanner;
 
 public class NameSearch
@@ -38,5 +38,6 @@ public class NameSearch
         {
         	System.out.println("Name was not a match");
         }
+        sc.close();
     }
 }  
