@@ -22,14 +22,22 @@ public class CountOnes
  
    public static void totalOnes(int min, int max)
    {
+	   //Create a counter flag
       int count = 0;
       
+      //Loop starts at min and goe up to the max
       for(int i = min; i <= max; i++)
       {
+    	  //converts int to a string
     	  String number = String.valueOf(i);
+    	  
+    	  //Checks to see if the current number still has a one in it
     	  while(number.contains("1"))
     	  {
-    		  number = number.substring(number.indexOf("1") + 1);
+    		  //it returns the location of the first occurrence of the specified character
+    		  int num = number.indexOf("1");
+    		  //creates a new string starting at the specified index and extends to the end of this string.
+    		  number = number.substring(num + 1);
     		  count++;
     	  }
       }
